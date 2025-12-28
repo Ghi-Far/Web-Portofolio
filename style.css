@@ -1812,134 +1812,198 @@ footer {
 
 
 /* ==========================================================================
-   MOBILE RESPONSIVE FIXES
+   MOBILE RESPONSIVE FIXES 
    ========================================================================== */
-@media (max-width: 900px) {
 
-    /* --- HOME SECTION --- */
+/* 1. SETUP UMUM UNTUK HP (Layar < 900px) */
+@media (max-width: 900px) {
+    
+    /* Mencegah scroll ke samping (Horizontal Scroll) */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    /* Lepaskan kunci tinggi layar. Biarkan memanjang ke bawah */
+    section {
+        height: auto !important; /* PENTING */
+        min-height: 100vh;
+        padding: 80px 20px !important; /* Tambah jarak biar ga mepet */
+        flex-direction: column;
+    }
+
+    /* Reset padding kanan bekas sidebar desktop */
+    #home, #profile, #karyaproject, #informasi, #kontak, #media {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+
+    /* --- 2. PERBAIKAN HOME SECTION --- */
     #home {
-        padding-right: 20px;
         justify-content: center;
         text-align: center;
+        padding-top: 120px !important; /* Jarak biar ga ketutup menu */
     }
-    
+
     .hero-container {
-        padding-left: 20px;
-        border-left: none;
-        border-top: 2px solid #ffcc00;
-        padding-top: 20px;
+        padding: 0;
+        border: none; /* Hapus garis pinggir */
+        margin: 0 auto;
     }
 
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.8rem; /* Kecilkan huruf judul */
+        line-height: 1.2;
     }
 
     .hero-subtitle {
-        margin: 0 auto 40px auto;
+        font-size: 1rem;
+        margin-bottom: 30px;
     }
 
+    /* --- 3. PERBAIKAN PROFILE SECTION --- */
+    #profile {
+        padding-top: 0 !important;
+    }
 
-    /* --- PROFILE SECTION --- */
     .split-profile {
-        flex-direction: column;
-        height: auto;
-        overflow-y: visible;
+        flex-direction: column; /* Tumpuk Atas-Bawah */
     }
 
+    /* Foto Karakter */
     .visual-zone {
-        height: 50vh;
-        flex: none;
+        height: 50vh; /* Setengah layar HP */
         width: 100%;
+        margin-bottom: -50px; /* Tarik sedikit ke bawah */
     }
 
+    .char-img {
+        max-height: 100%;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .floating-tag {
+        left: 10px; bottom: 60px; /* Sesuaikan posisi tag */
+        font-size: 0.8rem;
+    }
+
+    /* Teks Biodata */
     .data-zone {
-        height: auto;
-        padding: 30px 20px;
-        padding-bottom: 100px;
+        padding: 20px 0;
+        width: 100%;
+        text-align: center; /* Rata tengah */
+        background: linear-gradient(to top, #050505 80%, transparent); /* Fade effect */
     }
 
     .giant-name {
         font-size: 3rem;
     }
 
-    .char-img {
-        max-height: 50vh;
-        margin-bottom: 0;
+    .stats-grid {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .bio-desc {
+        text-align: center;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    /* --- 4. PERBAIKAN KARYA (GRID) --- */
+    .karya-grid {
+        display: flex;
+        flex-direction: column; /* Jadi 1 kolom ke bawah */
+        gap: 40px;
+        padding: 0;
+        height: auto;
+        overflow: visible;
+    }
+
+    .karya-item {
+        min-height: auto; /* Tinggi otomatis */
+        width: 100%;
+    }
+
+    .filter-buttons {
+        justify-content: center; /* Tombol filter di tengah */
+        gap: 10px;
+        overflow-x: auto; /* Scroll samping kalau tombol banyak */
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+    }
+
+    /* --- 5. PERBAIKAN MEDIA (VIDEO & MUSIK) --- */
+    /* Menu Navigasi Media */
+    .media-nav-container {
+        position: relative;
+        transform: none !important;
+        top: auto; left: auto;
+        margin: 0 auto 30px auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
     
-    .floating-tag {
-        bottom: 20px;
-        left: 20px;
+    .media-nav-container.active-mode {
+        top: auto; left: auto;
     }
 
+    /* Grid Video jadi 1 kolom */
+    .video-grid {
+        grid-template-columns: 1fr; 
+    }
 
-    /* --- SIDEBAR --- */
-    .sidebar {
-        width: 0;
+    /* Panel Musik Responsive */
+    .audio-interface {
+        flex-direction: column; /* Tumpuk visualizer & playlist */
+        height: auto;
     }
     
-    #home, #profile, #karyaproject, #informasi, #kontak {
-        padding-right: 0 !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .karya-header, .info-container {
-        padding: 0 20px;
-    }
-    
-    .contact-title {
-        font-size: 2.5rem;
-    }
-    
-    .music-control {
-        bottom: 10px; left: 10px;
-        padding: 8px;
-        font-size: 0.7rem;
-    }
-    #music-status {
-        display: none;
-    }
-}
-
-@media (max-width: 900px) {
-    #kontak {
-        height: auto !important;
-        min-height: 100vh;
-        overflow-y: visible;
-        padding-bottom: 100px;
+    .viz-screen, .playlist-container {
+        width: 100%;
     }
 
+    /* --- 6. PERBAIKAN INFORMASI (TIMELINE) --- */
+    .info-container {
+        grid-template-columns: 1fr; /* Jadi 1 kolom */
+        gap: 60px;
+    }
+
+    /* --- 7. PERBAIKAN KONTAK --- */
     .contact-container {
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 60px;
-        padding-top: 50px;
+        gap: 40px;
     }
 
-    .contact-info, 
-    .contact-form-wrapper {
+    .contact-info, .contact-form-wrapper {
         width: 100%;
         max-width: 100%;
-        flex: none;
     }
 
-    .contact-info {
+    .contact-title {
+        font-size: 3rem;
         text-align: center;
     }
     
+    .contact-desc {
+        text-align: center;
+    }
+
     .info-header {
         justify-content: center;
     }
 
-    .contact-desc {
-        margin: 0 auto 40px auto;
+    /* --- 8. MUSIC CONTROLLER (Kecilkan di HP) --- */
+    .music-control {
+        bottom: 15px; left: 15px;
+        padding: 8px 15px;
+        width: auto;
     }
-
-    .soc-btn {
-        max-width: 100%;
-        justify-content: center;
-        gap: 20px;
+    
+    #music-status {
+        display: none; /* Sembunyikan teks "BGM", sisakan bar equalizer aja biar rapi */
     }
 }
