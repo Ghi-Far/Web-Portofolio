@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Ghifari I.S...</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body style="background-color: black">
+    <!-- ============================SIDEBAR======================= -->
+    <!-- ============================SIDEBAR======================= -->
+
+    <button class="menu-toggle" id="menuToggle" onclick="toggleSidebar()">
+      <span class="bar"></span>
+
+      <span class="bar"></span>
+
+      <span class="bar"></span>
+    </button>
+
+    <nav class="sidebar" id="mainSidebar">
+      <div class="sidebar-header">
+        <span class="sys-text">SYSTEM // NAV</span>
+        <div class="dec-line"></div>
+      </div>
+
+      <div class="menu-links">
+        <a href="#home" onclick="closeSidebarOnMobile()">
+          <div class="icon-box-small">
+            <img
+              src="Assets/Icon Button/Home Icon.png"
+              class="icon-img"
+              alt="Home"
+            />
+          </div>
+          <span class="label">Home</span>
+        </a>
+
+        <a href="#profile" onclick="closeSidebarOnMobile()">
+          <div class="icon-box-small">
+            <img
+              src="Assets/Icon Button/Profile Icon.png"
+              class="icon-img"
+              alt="Profile"
+            />
+          </div>
+          <span class="label">Profile</span>
+        </a>
+
+        <a href="#karyaproject" onclick="closeSidebarOnMobile()">
+          <div class="icon-box-small">
+            <img
+              src="Assets/Icon Button/KaryaProject Icon.png"
+              class="icon-img"
+              alt="Karya"
+            />
+          </div>
+          <span class="label">Karya & Project</span>
+        </a>
+
+        <a href="#media" onclick="closeSidebarOnMobile()">
+          <div class="icon-box-small">
+            <img
+              src="Assets/Icon Button/Media Icon.png"
+              class="icon-img"
+              alt="Karya"
+            />
+          </div>
+          <span class="label">Media</span>
+        </a>
+
+        <a href="#informasi" onclick="closeSidebarOnMobile()">
+          <div class="icon-box-small">
+            <img
+              src="Assets/Icon Button/Informasi Icon.png"
+              class="icon-img"
+              alt="Info"
+            />
+          </div>
+          <span class="label">Informasi</span>
+        </a>
+
+        <a href="#kontak" onclick="closeSidebarOnMobile()">
+          <div class="icon-box-small">
+            <img
+              src="Assets/Icon Button/Kontak Icon.png"
+              class="icon-img"
+              alt="Kontak"
+            />
+          </div>
+          <span class="label">Kontak</span>
+        </a>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="footer-code">V.3.0 // ENDFIELD</div>
+      </div>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay" onclick="toggleSidebar()"></div>
+
+    <!-- ============================HOME======================= -->
+    <!-- ============================HOME======================= -->
+
+    <section id="home">
+      <div class="home-bg-video">
+        <video autoplay muted loop playsinline class="video-content">
+          <source src="Assets/Video/background_home.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay"></div>
+      </div>
+
+      <div class="hero-container">
+        <p class="tech-label">/// GHIFARI IBNU SHIBGHOTULLAH ///</p>
+
+        <h1 class="hero-title">WELCOME<br />TO MY<br />PORTOFOLIO WEB</h1>
+
+        <div class="hero-divider"></div>
+
+        <p class="hero-subtitle">
+          Selamat datang di portofolio digital saya.<br />
+
+          Ayo Mulai Menjelajahi Apa Saja Isi Website Saya.
+        </p>
+
+        <a href="#profile" class="btn-tech">MULAI PENJELAJAHAN</a>
+      </div>
+    </section>
+
+    <!-- ============================PROFILE======================= -->
+    <!-- ============================PROFILE======================= -->
+
+    <section id="profile" class="split-profile">
+      <div class="visual-zone">
+        <div class="bg-shape-dark"></div>
+
+        <div class="bg-shape-yellow"></div>
+
+        <div class="tech-lines"></div>
+
+        <div class="char-container">
+          <img
+            src="Assets/Image/Vestia-Zeta_pr-img_01.png"
+            alt="Profile Character"
+            class="char-img auto-mirror"
+          />
+        </div>
+
+        <div class="floating-tag">
+          <span>CODE: 251011700561</span>
+
+          <span class="tag-id">009</span>
+        </div>
+      </div>
+
+      <div class="data-zone">
+        <div class="content-wrapper">
+          <div class="top-decoration">
+            <span class="blink-dot"></span> SISTEM INFORMASI
+          </div>
+
+          <h1 class="giant-name">
+            GHIFARI<span class="text-stroke">IBNU SHIBGHOTULLAH</span>
+          </h1>
+
+          <div class="role-badge">
+            WEB DEVELOPER // <br />
+
+            DESIGNER & EDITOR
+          </div>
+
+          <p class="bio-desc">
+            Mahasiswa Unpam yang sedang belajar pemrograman web.<br />
+
+            Mempunyai minat di bidang web development, desain grafis,<br />
+
+            dan editing video. Dengan background awal di bidang multimedia
+            <br />
+
+            & jaringan komputer. Dan dengan web ini saya bermain :)
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h4>PROJECTS</h4>
+
+              <p>15+</p>
+            </div>
+
+            <div class="stat-item">
+              <h4>AGE</h4>
+
+              <p>18 YRS</p>
+            </div>
+
+            <div class="stat-item">
+              <h4>STATUS</h4>
+
+              <p style="color: #00ff00">ACTIVE</p>
+            </div>
+          </div>
+
+          <a href="#informasi" class="btn-primary-tech">
+            MORE DETAILS <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================KARYA & PROJECT======================= -->
+    <!-- ============================KARYA & PROJECT======================= -->
+
+    <section id="karyaproject">
+      <div class="karya-header">
+        <h2 class="karya-title">Karya & Project</h2>
+
+        <p class="karya-subtitle">
+          Kumpulan karya dan projek dalam bidang web development, desain, dan
+          teknologi yang telah saya kerjakan.
+        </p>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+
+        <button class="filter-btn" data-filter="web">Web Development</button>
+
+        <button class="filter-btn" data-filter="design">Design Grafis</button>
+
+        <button class="filter-btn" data-filter="dokumenter">Dokumenter</button>
+
+        <button class="filter-btn" data-filter="service">Service</button>
+      </div>
+
+      <div class="karya-grid">
+        <div class="karya-item" data-category="design">
+          <img
+            src="File Konten/images/1.png"
+            alt="design E-commerce"
+            class="karya-img"
+          />
+
+          <div class="karya-info">
+            <h3 class="karya-item-title">Peduli Bencana Sumatera</h3>
+
+            <p class="karya-item-desc">
+              Membuat Poster Atau Flyer Untuk Korban Bencana Di Sumatera Dan
+              Menerima Sumbangan Bantuan.
+            </p>
+
+            <div class="karya-tags">
+              <span class="karya-tag">CANVA</span>
+
+              <span class="karya-tag">Photoshop</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="karya-item" data-category="service">
+          <img
+            src="File Konten/images/2.png"
+            alt="Service HP Oppo A54"
+            class="karya-img"
+          />
+
+          <div class="karya-info">
+            <h3 class="karya-item-title">Service HP Oppo A54</h3>
+
+            <p class="karya-item-desc">
+              Mengganti atau memperbaiki layar handphone oppo A54 yang pecah dan
+              blank
+            </p>
+
+            <div class="karya-tags">
+              <span class="karya-tag">Heat Gun</span>
+
+              <span class="karya-tag">Glue</span>
+
+              <span class="karya-tag">Screwdriver</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="karya-item" data-category="service">
+          <img
+            src="File Konten/images/3.png"
+            alt="Service HP Xiaomi Redmi Note 8 Pro"
+            class="karya-img"
+          />
+
+          <div class="karya-info">
+            <h3 class="karya-item-title">Service HP Xiaomi Redmi Note 8 Pro</h3>
+
+            <p class="karya-item-desc">
+              Mengganti atau memperbaiki layar handphone oppo A54 yang kabel
+              flexiblenya putus.
+            </p>
+
+            <div class="karya-tags">
+              <span class="karya-tag">Heat Gun</span>
+
+              <span class="karya-tag">Glue</span>
+
+              <span class="karya-tag">Screwdriver</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="karya-item" data-category="service">
+          <img
+            src="File Konten/images/4.png"
+            alt="Service Mengganti Pasta Processor ASUS X550IK"
+            class="karya-img"
+          />
+
+          <div class="karya-info">
+            <h3 class="karya-item-title">Repasta Processor ASUS X550IK</h3>
+
+            <p class="karya-item-desc">
+              Mengganti atau memperbaharui pasta processor yang sudah kering
+              yang bisa mengakibatkan overheat pada processor jika tidak
+              diganti.
+            </p>
+
+            <div class="karya-tags">
+              <span class="karya-tag">Pasta</span>
+
+              <span class="karya-tag">Flashlight</span>
+
+              <span class="karya-tag">Screwdriver</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="karya-item" data-category="service">
+          <img
+            src="File Konten/images/7.png"
+            alt="Service Mengganti Pasta Processor ASUS X550IK"
+            class="karya-img"
+          />
+
+          <div class="karya-info">
+            <h3 class="karya-item-title">
+              Repair Glass Frame Macbook Air 2019
+            </h3>
+
+            <p class="karya-item-desc">
+              Mengganti fram bawah laya ayng ada di Macbook Air 2019 yang pecah.
+            </p>
+
+            <div class="karya-tags">
+              <span class="karya-tag">Heatgun</span>
+
+              <span class="karya-tag">Flashlight</span>
+
+              <span class="karya-tag">Glue</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="karya-item" data-category="design">
+          <img
+            src="File Konten/images/5.png"
+            alt="Design Logo KKI"
+            class="karya-img"
+          />
+
+          <div class="karya-info">
+            <h3 class="karya-item-title">Design Ulang Logo KKI Indonesia</h3>
+
+            <p class="karya-item-desc">
+              Mendesign ulang logo KKI Indonesia yang sekarang dengan mengambil
+              ide dari logo Kushiryu Japan.
+            </p>
+
+            <div class="karya-tags">
+              <span class="karya-tag">Photoshop</span>
+
+              <span class="karya-tag">Illustrator</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="karya-item" data-category="dokumenter">
+          <img
+            src="File Konten/images/6.png"
+            alt="Dokumenter Visualization"
+            class="karya-img"
+          />
+
+          <div class="karya-info">
+            <h3 class="karya-item-title">Dokumenter Kelulusan SDN Parakan</h3>
+
+            <p class="karya-item-desc">
+              Mendokumentasikan seluruh kegiatan kelulusan dari awal hingga
+              akhir menggunakan kamera DSLR
+            </p>
+
+            <div class="karya-tags">
+              <span class="karya-tag">Nikon D3500</span>
+
+              <span class="karya-tag">Iphone 12</span>
+
+              <span class="karya-tag">Canon 1300D</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+
+        <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+    </section>
+
+    <!-- ============================MEDIA======================= -->
+    <!-- ============================MEDIA======================= -->
+
+    <section id="media">
+      <div class="video-bg-container">
+        <video autoplay muted loop playsinline class="bg-video">
+          <source src="Assets/Video/background_media2.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay"></div>
+      </div>
+
+      <div class="back-btn-container" id="backButton">
+        <button onclick="closeMedia()" class="btn-back">
+          <span class="arrow">←</span> BACK
+        </button>
+      </div>
+
+      <div class="media-nav-container" id="mediaNav">
+        <div class="nav-item" onclick="openMedia('video')" data-type="video">
+          <div class="icon-box"><span class="icon-symbol">▶</span></div>
+          <span class="nav-label">VIDEO</span>
+        </div>
+
+        <div class="nav-item" onclick="openMedia('foto')" data-type="foto">
+          <div class="icon-box"><span class="icon-symbol">📷</span></div>
+          <span class="nav-label">GALLERY</span>
+        </div>
+
+        <div class="nav-item" onclick="openMedia('musik')" data-type="musik">
+          <div class="icon-box"><span class="icon-symbol">♫</span></div>
+          <span class="nav-label">AUDIO</span>
+        </div>
+      </div>
+
+      <div class="media-content-wrapper" id="mediaContent">
+    <div id="content-video" class="content-panel">
+        <h2 class="panel-title">/// VIDEO_DATABASE</h2>
+
+        <div class="video-grid">
+            
+            <div class="video-card">
+                <div class="vid-thumb">
+                    <iframe 
+                        src="https://www.youtube.com/embed/LuAVZKJQEEc?modestbranding=1&rel=0" 
+                        title="Archon Quest 5.7" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="vid-info"><h3>Archon Quest 5.7</h3></div>
+            </div>
+
+            <div class="video-card">
+                <div class="vid-thumb">
+                    <iframe 
+                        src="https://www.youtube.com/embed/TsHEFHWbVnw?modestbranding=1&rel=0" 
+                        title="Reyna Ace Ascent" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="vid-info"><h3>Reyna Ace Ascent</h3></div>
+            </div>
+
+            <div class="video-card">
+                <div class="vid-thumb">
+                    <iframe 
+                        src="https://www.youtube.com/embed/OZ-CG0frpuk?modestbranding=1&rel=0" 
+                        title="Phonix Ace Split" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="vid-info"><h3>Phonix Ace Split</h3></div>
+            </div>
+
+        </div>
+    </div>
+
+        <div id="content-foto" class="content-panel" style="display: none">
+          <div class="panel-header">
+            <h2 class="panel-title">/// IMAGES_DATABASE</h2>
+
+            <span class="panel-status">STATUS: DECRYPTED</span>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="File Konten/images/waguri.png" alt="Project 1" />
+
+              <div class="item-overlay">
+                <span class="overlay-tag">IMG_001</span>
+
+                <h3>MY KISAH</h3>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="File Konten/images/1329845.jpeg" alt="Project 2" />
+
+              <div class="item-overlay">
+                <span class="overlay-tag">IMG_002</span>
+
+                <h3>TANJIROU SUN BREATHING</h3>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="File Konten/images/1363140.png" alt="Project 3" />
+
+              <div class="item-overlay">
+                <span class="overlay-tag">IMG_003</span>
+
+                <h3>SHINOBU</h3>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="File Konten/images/Jett Valorant.jpg" alt="Project 4" />
+
+              <div class="item-overlay">
+                <span class="overlay-tag">IMG_004</span>
+
+                <h3>JETT VALORANT</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="content-musik" class="content-panel" style="display: none">
+          <div class="panel-header">
+            <h2 class="panel-title">/// AUDIO_DATABASE</h2>
+
+            <span class="panel-status blink">TRANSMITTING...</span>
+          </div>
+
+          <div class="audio-interface">
+            <div class="viz-screen">
+              <div class="viz-bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+
+              <div class="now-playing-info">
+                <p>CURRENT TRACK:</p>
+
+                <h3 id="currentTrackName">NO_AUDIO_SELECTED</h3>
+
+                <div class="volume-control-container">
+                  <span class="vol-icon">VOL</span>
+
+                  <input
+                    type="range"
+                    id="volumeSlider"
+                    min="0"
+                    max="1"
+                    step="0.1"
+                    value="1"
+                    oninput="setVolume(this.value)"
+                  />
+
+                  <span id="volValue">100%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="playlist-container">
+              <div
+                class="track-row"
+                onclick="playAudio(this, 'File Konten/audio/Lagu 1.mp3', 'Where We Are')"
+              >
+                <div class="track-icon">▶</div>
+
+                <div class="track-meta">
+                  <h4>Where We Are.mp3</h4>
+
+                  <p>05:00 // One Direction</p>
+                </div>
+              </div>
+
+              <div
+                class="track-row"
+                onclick="playAudio(this, 'File Konten/audio/Lagu 2.mp3', 'blue')"
+              >
+                <div class="track-icon">▶</div>
+
+                <div class="track-meta">
+                  <h4>blue.mp3</h4>
+
+                  <p>03:41 // yung kai</p>
+                </div>
+              </div>
+
+              <div
+                class="track-row"
+                onclick="playAudio(this, 'File Konten/audio/Lagu 3.mp3', 'Mejikuhibiniu')"
+              >
+                <div class="track-icon">▶</div>
+
+                <div class="track-meta">
+                  <h4>Mejikuhibiniu Short.mp3</h4>
+
+                  <p>01:00 // Tenxi, Suisei, Jemsii</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================INFORMASI======================= -->
+    <!-- ============================INFORMASI======================= -->
+    <section id="informasi">
+      <div class="info-container">
+        <div class="info-left">
+          <h3 class="section-heading">TIMELINE PERKEMBANGAN</h3>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2019 - 2022</span>
+                <h4>SMP</h4>
+                <p>
+                  Selain berfokus pada kegiatan sekolah saya, Saat itu saya
+                  mendalami hardware komputer karena saya ingin merakit
+                  komputer, Dan karena banyak masalah yang terjadi saat merakit
+                  komputer (karena komputer bekas 😅) saya menjadi paham sedikit
+                  demi sedikit tentang trobleshooting pada komputer, baik di
+                  hardware dan juga software, dan juga saya belajar beberapa
+                  software editing foto & video.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2022 - 2025</span>
+                <h4>SMK - Teknik Komputer Jaringan</h4>
+                <p>
+                  Disini saya mulai belajar tentang Jaringan Komputer, bagaimana
+                  cara IP berfungsi dan cara memberikan IP pada sebuah
+                  perangkat, selain itu saya juga belajar tentang Multimedia, di
+                  mana saya belajar tentang desain grafis menggunakan Adobe
+                  Photoshop & Illustrator, serta editing video menggunakan Adobe
+                  Premiere Pro. Selain itu saya juga mulai belajar tentang
+                  pemrograman dasar.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025 - 2029</span>
+                <h4>Universitas Pamulang - Sistem Informasi</h4>
+                <p>
+                  Saat ini saya sedang menempuh pendidikan di Universitas
+                  Pamulang jurusan Sistem Informasi. Di mana saya mulai belajar
+                  tentang pemrograman web secara mendalam, mulai dari front-end
+                  hingga back-end development. Selain itu, saya juga aktif
+                  mengikuti berbagai proyek pengembangan aplikasi web dan terus
+                  mengasah keterampilan saya di bidang teknologi informasi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-right">
+          <div class="skills-box">
+            <h3 class="section-heading">KEAHLIAN</h3>
+            <div class="skills-wrapper">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">JAVASCRIPT</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">NODE.JS</span>
+              <span class="skill-tag">UI/UX DESIGN</span>
+              <span class="skill-tag">ADOBE PHOTHOSHOP</span>
+              <span class="skill-tag">GIT / GITHUB</span>
+              <span class="skill-tag">ADOBE ILLUSTRATOR</span>
+              <span class="skill-tag">ADOBE PREMIERE PRO</span>
+              <span class="skill-tag">CANVA</span>
+              <span class="skill-tag">CAPCUT</span>
+            </div>
+          </div>
+
+          <div class="cta-box">
+            <div class="cta-content">
+              <h3>TERTARIK KOLABORASI?</h3>
+              <p>
+                Saya selalu terbuka untuk mendiskusikan proyek baru, ide
+                kreatif, atau peluang menjadi bagian dari visi Anda.
+              </p>
+              <a href="#kontak" class="btn-tech">
+                MULAI DISKUSI <span class="arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================KONTAK======================= -->
+    <!-- ============================KONTAK======================= -->
+    <section id="kontak">
+      <div class="contact-bg-video">
+        <video autoplay muted loop playsinline class="video-content">
+          <source src="Assets/Video/background_kontak.mp4" type="video/mp4" />
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-header"><span class="blink-dot"></span> ONLINE</div>
+
+          <h1 class="contact-title">HUBUNGI<br />SAYA</h1>
+
+          <p class="contact-desc">
+            Silakan hubungi saya untuk kolaborasi project, atau informasi lebih
+            lanjut. Jalur komunikasi selalu terbuka.
+          </p>
+
+          <div class="social-links-area">
+            <div class="social-buttons">
+              <a
+                href="https://wa.me/6289527057469"
+                target="_blank"
+                class="soc-btn"
+              >
+                <span class="btn-label">
+                  <i class="fa-brands fa-whatsapp"></i> Whatsapp
+                </span>
+                <span class="btn-arrow">↗</span>
+              </a>
+
+              <a
+                href="https://instagram.com/gf_ibns"
+                target="_blank"
+                class="soc-btn"
+              >
+                <span class="btn-label">
+                  <i class="fa-brands fa-instagram"></i> Instagram
+                </span>
+                <span class="btn-arrow">↗</span>
+              </a>
+
+              <a href="mailto:ghifariibnu127@gmail.com" class="soc-btn">
+                <span class="btn-label">
+                  <i class="fa-regular fa-envelope"></i> Email Me
+                </span>
+                <span class="btn-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form
+            action="https://formspree.io/f/xwveokon"
+            method="POST"
+            class="tech-form"
+          >
+            <div class="form-group">
+              <label for="nama">NAMA LENGKAP</label>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                placeholder="Masukkan identitas..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">EMAIL ADDRESS</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="nama@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subjek">SUBJEK</label>
+              <input
+                type="text"
+                id="subjek"
+                name="subjek"
+                placeholder="Tujuan pesan..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="pesan">PESAN / TRANSMISSION</label>
+              <textarea
+                id="pesan"
+                name="pesan"
+                rows="5"
+                placeholder="Tulis pesan Anda di sini..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-send">
+              KIRIM PESAN <span class="send-icon">➤</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================BACKGROUND AUDIO======================= -->
+    <!-- ============================BACKGROUND AUDIO======================= -->
+    <audio id="bg-music" loop>
+      <source src="Assets/Audio/BGM.mp3" type="audio/mp3" />
+    </audio>
+
+    <div class="music-control" onclick="toggleMusic()">
+      <div class="equalizer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <span id="music-status">BGM</span>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-decoration"></div>
+
+        <p class="copyright">
+          &copy; 2025 Created By GHIFARI IBNU SHIBGHOTULLAH
+        </p>
+
+        <p class="website-ref">
+          WEBSITE:
+          <a href="#home" class="footer-link">PERM_PRESCHOOLS_FEDERATION</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
